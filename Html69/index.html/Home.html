@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+            background-color: white; 
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: white;
+    
+}
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo h1 {
+    background-color: black;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.search-bar {
+    align-items: center;
+    background-color: black;
+}
+.search-bar input {
+    background-color: b;
+    padding: 8px;
+    width: 300px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+.search-bar button {
+    background-color: gold;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cart a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    background-color: gold;
+}
+nav.categories {
+    background-color: gold;
+    padding: 15px;
+    text-align: center;
+}
+
+nav.categories ul {
+    justify-content: center;
+    background-color: gold;
+}
+
+nav.categories ul li {
+    display: inline-block;
+    background-color: gold;
+}
+nav.categories ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: gold;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+nav.categories ul li a:hover {
+    background-color: black;
+    border-radius: 10px;
+}
+.banner {
+    
+    color: black;
+    padding: 50px;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.banner button {
+    background-color: gold;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+    background-color: black;
+}
+#div5{
+    width: 18%;
+    text-align: center;
+    height: 320px;
+    float: left;
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#button1{
+    background-color: gold;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.smalldivs{
+    float: right;
+    display: inline-block;
+    margin-top: 50px;
+    width: 18%;
+    text-align: center;
+    height: 320px;
+    margin-right: 80px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#div6{
+    width: 21%;
+    text-align: center;
+    height: 340px;
+    float: left;
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.smalldivs1{
+    float: right;
+    display: inline-block;
+    margin-top: 50px;
+    width: 18%;
+    text-align: center;
+    height: 340px;
+    margin-right: 80px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#div7{
+    width: 18%;
+    text-align: center;
+    height: 340px;
+    float: left;
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.smalldivs2{
+    float: right;
+    display: inline-block;
+    margin-top: 50px;
+    width: 19%;
+    text-align: center;
+    height: 370px;
+    margin-right: 80px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#div8{
+    width: 18%;
+    text-align: center;
+    height: 300px;
+    float: left;
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.smalldivs3{
+    float: right;
+    display: inline-block;
+    margin-top: 50px;
+    width: 18%;
+    text-align: center;
+    height: 300px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+#view-button{
+    text-align: center;
+    margin-top: 90px;
+    
+}
+#div9{
+    background-color: white;
+    margin-top: 50PX;
+    margin-left: 50px;
+}
+.features-grid {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: gold;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.grid {
+    width: 22%;
+}
+.grid h3 {
+    background-color: gold;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.grid p {
+    background-color: gold;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+    
+    .grid {
+        background-color: gold;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    #lastdiv{
+        background-color: black;
+        height: 300px;
+    }
+    #last1{
+        height: 200px;
+        width: 300px;
+        background-color: black;
+        margin-top: 30px;
+        margin-left: 30px;
+        display: inline-block;
+        float: left;
+    }
+    .smalllast{
+        height: 200px;
+        width: 300px;
+        background-color: black;
+        margin-top: 30px;
+        margin-left: 30px;
+        display: inline-block;
+        float: right;
+        margin-right: 50px;
+    }
+    #lastdiv69{
+        height: 10px;
+        width: 250px;
+        background-color: black;
+         margin-left: 600px;
+    }
+    
+    </style>
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>YourDevice.in</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for electronics...">
+                <button>Search</button>
+            </div>
+            <div class="cart">
+                <a href="#">Cart</a>
+            </div>
+        </header>
+        <nav class="categories">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Smartphones.html">Smartphones</a></li>
+                <li><a href="Laptops.html">Laptops</a></li>
+                <li><a href="cameras.html">Cameras</a></li>
+            </ul>
+        </nav>
+        <section class="banner">
+            <h2><i>Welcome to the My Electronics Store</h2></i>
+            <p>Find the best deals on the latest electronics and gadgets.</p>
+            <button>Shop Now</button>
+        </section>
+        <div style="height: 450px;" id="cartdiv">
+            <div id="head">
+                <h1 style="text-align:center;color: black;">Smartphones</h1>
+            </div>
+            <div id="container">
+            <div id="div5">
+                <figure>
+                    <img src="images/iphone16 pro max.jpg" height="200">
+                    <figcaption style="font-weight: bold; color: black;">iPhone 16 Pro Max 256GB Natural Titanium
+                    <p id="cartpara" style="font-weight: bold; color: black;">₹1,44,900<br>
+                    <button id="button1">Buy Now</button>
+                    </p>
+                    </figcaption>
+                </figure>
+                </div>
+            </figure>
+        </div>
+        <div class="smalldivs">
+            <figure>
+                <img src="images/oneplus 12.webp" height="200">
+            <figcaption style="font-weight: bold; color: black;">OnePlus 12 (Flowy Emerald, 12GB RAM, 256GB Storage)
+                <p id="cartpara" style="font-weight: bold; color: black;">₹61,999<br>
+                <button id="button1">Buy Now</button>
+                </p>
+                </figcaption>
+            </figure>
+        </div>
+<div class="smalldivs">
+    <figure>
+        <img src="images/xiaomi 14 ultra 2.webp" height="200">
+    <figcaption style="font-weight: bold; color: black;">Xiaomi 14 Ultra (Black, 512 GB)  (16 GB RAM)
+        <p id="cartpara" style="font-weight: bold; color: black;">₹99,999<br>
+        <button id="button1">Buy Now</button>
+        </p>
+        </figcaption>
+    </figure>
+</div>
+
+<div class="smalldivs">
+<figure>
+    <img src="images/samsung s24 ultra.webp" height="200">
+<figcaption style="font-weight: bold; color: black;">Samsung Galaxy S24 Ultra 5G AI (Titanium Gray, 12GB, 1TB Storage)
+    <p id="cartpara" style="font-weight: bold; color: black;">₹1,39,999<br>
+    <button id="button1">Buy Now</button>
+    </p>
+    </figcaption>
+</figure>
+</div>
+    </div>
+</div>
+<div style="height: 450px;" id="cartdiv">
+<div id="head">
+    <h1 style="text-align:center; margin-top: 40px; color: black;">Laptops</h1>
+</div>
+<div id="container2">
+<div id="div6">
+    <figure>
+        <img src="images/Apple MacBook Pro.webp" height="190">
+        <figcaption style="font-weight: bold; margin-top: 8px; color: black;">Apple 2023 MacBook Pro (Apple M3 Max chip and 48GB Unified Memory, 1TB) - Space Black
+        <p id="cartpara" style="font-weight: bold; color: black;">₹3,69,990<br>
+        <button id="button1">Buy Now</button>
+        </p>
+        </figcaption>
+    </figure>
+    </div>
+    <div class="smalldivs1">
+        <figure>
+            <img src="images/HP Omen Gaming.jpg" height="200">
+        <figcaption style="font-weight: bold; color: black;">HP Omen Gaming Laptop,13Th Gen Intel Core I9-13900Hx,12Gb Rtx 4080 Gpu
+            <p id="cartpara" style="font-weight: bold; color: black;">₹2,98,245<br>
+            <button id="button1">Buy Now</button>
+            </p>
+            </figcaption>
+        </figure>
+    </div>
+<div class="smalldivs1">
+<figure>
+    <img src="images/Lenovo legion pro 7.webp" height="200" width="250px">
+<figcaption style="font-weight: bold; color: black;">Lenovo Legion Pro 7 Intel Core i9-14900HX 240Hz Gaming Laptop 32GB/1TB NVIDIA RTX 4080 12GB
+    <p id="cartpara" style="font-weight: bold; color: black;">₹3,24,490<br>
+    <button id="button1">Buy Now</button>
+    </p>
+    </figcaption>
+</figure>
+</div>
+
+<div class="smalldivs1">
+<figure>
+<img src="images/Asus Rog strix Scar 16.webp" height="200">
+<figcaption style="font-weight: bold; color: black;">ASUS ROG Strix SCAR 16 (2024), Intel Core™ i9 14900HX 14th Gen Gaming Laptop
+<p id="cartpara" style="font-weight: bold; color: black;">₹3,39,990<br>
+<button id="button1">Buy Now</button>
+</p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div style="height: 450px;" id="cartdiv">
+<div id="head">
+    <h1 style="text-align:center;margin-top: 50px; color: black;">Cameras</h1>
+</div>
+<div id="container3">
+<div id="div7">
+    <figure>
+        <img src="images/Canon EOS C70.webp" height="200">
+        <figcaption style="font-weight: bold; color: black;">Canon EOS C70 RF24-70mm F2.8 L is USM Kit
+        <p id="cartpara" style="font-weight: bold; color: black;">₹10,36,961<br>
+        <button id="button1">Buy Now</button>
+        </p>
+        </figcaption>
+    </figure>
+    </div>
+    <div class="smalldivs2">
+        <figure>
+            <img src="images/Panasonic LUMIX G9.webp" height="200">
+        <figcaption style="font-weight: bold; color: black;">Panasonic LUMIX G9II Micro Four Thirds Camera, 25.2MP Sensor with Phase Hybrid AF, Powerful Image Stabilization
+            <p id="cartpara" style="font-weight: bold; color: black;">₹2,72,411<br>
+            <button id="button1">Buy Now</button>
+            </p>
+            </figcaption>
+        </figure>
+    </div>
+<div class="smalldivs2">
+<figure>
+    <img src="images/Nikon Z6.webp" height="200">
+<figcaption style="font-weight: bold; color: black;">Nikon Z6 II Mirrorless Camera Z 24-70mm Lens with Additional Battery, Optical Zoom, Black
+    <p id="cartpara" style="font-weight: bold; color: black;">₹1,62,999<br>
+    <button id="button1">Buy Now</button>
+    </p>
+    </figcaption>
+</figure>
+</div>
+
+<div class="smalldivs2">
+<figure>
+<img src="images/Sony Alpha ILCE-1.webp" height="200">
+<figcaption style="font-weight: bold; color: black;">Sony Alpha ILCE-1 Mirrorless Full-Frame Camera | 30 FPS | 50.1 MP | 8K 30P, 4K 120P | Real-time Eye AF, Real time Tracking - Black
+<p id="cartpara" style="font-weight: bold; color: black;">₹4,99,990<br>
+<button id="button1">Buy Now</button>
+</p>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="view-button">
+<button style="padding: 10px 15px; border-radius: 10px; background-color: gold;color: white;font-weight: bold;cursor: pointer;">View More</button>
+</div>
+</div>
+<div class="features-grid">
+    <div class="grid">
+        <img src="images/free-delivery.jpg" height="150">
+        <h3 style="color: black;">Free-delivery</h3>
+        <p style="color: black;">Round-the-clock assistance for a smooth shopping experience</p>
+    </div>
+    <div class="grid">
+        <img src="images/users.png" height="150">
+        <h3 style="color: black;">5M+ Users</h3>
+        <p style="color: black;">Pay with most secured payment apps</p>
+    </div>
+    <div class="grid">
+        <img src="images/return.jpg" height="150">
+        <h3 style="color: black;">30 Days Return</h3>
+        <p style="color: black;">30 days return policy if you are not satisfied with products & services</p>
+    </div>
+</div>
+<div id="lastdiv">
+    <div id="last1">
+        <h3 style="color: white;background-color: black;">Our Store</h3>
+        <p style="background-color: black;">Get Questions? Contact Us 24/7 <br>
+            ☎ 08008 08008<br>
+            contact us@YourDevice.com<br>
+            Contact Info:<br>
+            YourDevice - punjab, India
+        </p>
+    </div>
+    <div class="smalllast">
+        <h3 style="color: white;background-color: black;">Join our Newsletter</h3>
+            <p style="color: white;background-color: black;">Sign up for our website and get 50% off<br> on your next order. Pretty sweet, we know.</p>
+            <form style="background-color: black;">
+            <input type="email" placeholder="Enter your email" style="padding: 10px; width: 80%;border-radius: 10px;margin-top: 10px;" />
+            <button type="submit" style="padding: 10px; background-color: gold; color: white;border-radius: 10px;margin-top: 10px;">Enter</button>
+            </form>
+    </div>
+    <div class="smalllast">
+        <h3 style="color: white;background-color: black;">Our Policy</h3>
+        <ul>
+           <li style="background-color: black;"><a style="text-decoration: none;color: white;background-color: black;" href="#">Help & Contact</a></li>
+           <li style="background-color: black;"><a style="text-decoration: none;color: white;background-color: black;" href="#">Shipping & Taxes</a></li>
+           <li style="background-color: black;"><a style="text-decoration: none;color: white;background-color: black;" href="#">Return Policy</a></li>
+           <li style="background-color: black;"><a style="text-decoration: none;color: white;background-color: black;" href="#">About Us</a></li>
+           <li style="background-color: black;"><a style="text-decoration: none;color: white;background-color: black;" href="#">Affiliates</a></li>
+           <li style="background-color: black;"><a style="text-decoration: none;color: white;background-color: black;" href="#">Legal Notice</a></li>
+          </ul>
+    </div>
+    <div class="smalllast">
+        <h3 style="color: white;background-color: black;">Information</h3>
+        <ul>
+            <li style="background-color: black;color: white;"><a style="color: white;text-decoration: none;background-color: black;" href="#">My Account</a></li>
+            <li style="background-color: black;color: white;"><a style="color: white;text-decoration: none;background-color: black;" href="#">Order History</a></li>
+            <li style="background-color: black;color: white;"><a style="color: white;text-decoration: none;background-color: black;" href="#">Wishlist</a></li>
+            <li style="background-color: black;color: white;"><a style="color: white;text-decoration: none;background-color: black;" href="#">Returns</a></li>
+            <li style="background-color: black;color: white;"><a style="color: white;text-decoration: none;background-color: black;" href="#">Privacy Policy</a></li>
+            <li style="background-color: black;color: white;"><a style="color: white;text-decoration: none;background-color: black;" href="#">Site Map</a></li>
+        </ul>
+    </div>
+    <div id="lastdiv69">
+    <p style="color: white;background-color: black;margin-top: 20px;">&copy;2024 All Rights Reserved</p>
+    </div>
+</div>
+
+</body>
+</html>
